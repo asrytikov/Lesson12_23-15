@@ -1,3 +1,5 @@
+package p1;
+
 import java.util.Scanner;
 
 public class Main {
@@ -29,7 +31,7 @@ public class Main {
             exception.getMessage();
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Array index error");
-        } catch (MyException exception){
+        } catch (p1.MyException exception){
             System.out.println(exception.getMessage());
         }
         finally {
@@ -38,7 +40,7 @@ public class Main {
         System.out.println("Exit");*/
     }
 
-    public static int sum(int x, int y) throws MyException{
+    public static int sum(int x, int y) throws MyException {
         if (x>y) throw new MyException(x,y,"X>Y");
         return x+y;
     }

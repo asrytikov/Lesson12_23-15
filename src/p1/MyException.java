@@ -1,3 +1,5 @@
+package p1;
+
 public class MyException extends Exception{
 
     private int x;
